@@ -65,5 +65,5 @@ NOTITIMM="Timer/Alarm went off at $(date +%R:%S) on $(date +%d-%m-%Y)."				# Not
 
 RES="1920x1080+0+0"										# The resolution and position of the background.
 PLAY="mpv"											# Player for the video background.
-REND="--vo=xv"											# Render option for MPlayer and MPV.
+REND="--vo=gl"											# Render option for MPlayer and MPV.
 VPARM="--video-aspect=16:9 -loop inf"								# Any special parameters for looping and so forth.

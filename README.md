@@ -14,36 +14,44 @@ may feel when using something like WindowMaker or FVWM.
 
 The following scripts are included (not all are currently finished):
 
-batterylow - When launched, gives a notification and plays a sound 
+- batterylow - When launched, gives a notification and plays a sound 
 (if the user desires). Intended to be used with a third party tool.
 Features include setting xblacklight to any desired variable. Perhaps
 in the future it will be more complex and run in the background rather
 than be dependent on another program or applet.
 
-dialogsounds - Very hacky and WIP idea to play sounds via the active window
+- dialogsounds - Very hacky and WIP idea to play sounds via the active window
 title when it pops up. Any better solutions are welcomed, as this will have
 a lot of problems in theory.
 
-importadvanced - Screenshot tool that utilizes ImageMagick's "import".
+- importadvanced - Screenshot tool that utilizes ImageMagick's "import".
 Features prefix naming, date/time, parameters, format choice, and FTP/SFTP 
 uploading with clipboard. Can be configured to support GraphicsMagick's
 command line tool instead.
 
-timer-xy - When launched, gives a notification that tells the user when it 
+- timer-xy - When launched, gives a notification that tells the user when it 
 went off and plays a sound. Intended to be used with a third party program 
 (like wmtimer). Perhaps will become more independent over time.
 
-videobackground - Handy for making a video play all the time as a
+- videobackground - Handy for making a video play all the time as a
 desktop background (similar to Windows DreamScene). Can be customized
 to use an video player with any parameters. See the wiki page (soon)
 on how it can setup in WindowMaker and feel nicely integrated.
+
+##Installation
+
+The scripts can be installed in "/usr/bin" or placed wherever you'd desire
+(but "/usr/bin" is my recommendation).
+
+".xyscripts" should be placed in your home folder. You'll need to go through
+and edit the file to customize it for your system and setup.
 
 ##Issues
 
 Issues can be reported and tracked with GitHub's issue tracker: https://github.com/Xylemon/Window-Manager-Scripts/issues
 
 There are already some known problems, such as the Dialog Sounds script
-not working (#1).
+not working (Issue #1).
 
 ##Dependencies
 
@@ -53,6 +61,7 @@ Required:
 - Curl
 - ImageMagick or GraphicsMagick (for importadvanced)
 - Linux or Unix based systems
+- xwinwrap (for videobackground)
 
 Optional:
 

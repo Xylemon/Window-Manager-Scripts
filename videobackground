@@ -1,8 +1,7 @@
 #!/bin/bash
-# Video Background using xwinwrap
+# Video Background
 #
-# By Gethyn ThomasQuail
-# Help from Compton and SpaceFM GitHub issues and config help from: http://wiki.bash-hackers.org/howto/conffile.
+# By Gethyn "Xylemon" ThomasQuail
 #
 # Load video files like this "videobackground /path/to/file".
 
