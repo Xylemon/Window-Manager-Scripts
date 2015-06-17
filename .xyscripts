@@ -1,0 +1,69 @@
+# Configuration file for Xylemon's Bash Scripts
+
+# For all scripts
+
+AUDP="ossplay"											# Audio output, such as aplay or ossplay (leave blank if undesired).
+
+# Battery Indicator for Laptops
+#
+# Configuration
+
+AUDLBATL="/path/to/sound.ogg"									# Location of sound to go off when battery is low.
+BATLLIT="xbacklight -set 35"									# Sets the backlight.
+NOTIBATL="notify-send -u critical -i battery-low"						# Notification command for Low Battery (leave blank if undesired).
+NOTIBATLT="Battery Low"										# Notification title for Low Battery.
+NOTIBATLM="Please plug into a power source."							# Notification message for Low Battery.
+
+# Dialog Sounds
+#
+# Configuration
+
+AUDE="/path/to/sound.ogg"									# Error sound location.
+AUDQ=""												# Question sound location.
+
+# Import Advanced (Screenshot Tool)
+#
+# Main
+
+SCTOOL="import"											# The command line tool used for taking the screenshots.
+LOC="/path/to/pictures/folder"									# Location for image to be saved. Must have full path (no "~/").
+FORM="png"											# Set format (can do PNG, JPEG, GIF, and more).
+NAME="selection"										# Name of image.
+IPARM=""											# Any special parameters for import you want to do. For example, -border.
+FILE="$NAME-$(date +%d-%m-%Y_%R:%S).$FORM"							# Filename for saving and uploading, only change if you know what you're doing.
+CLIP="xclip -selection c"									# Clipboard manager.
+
+# Notification
+
+NOTI="notify-send -u normal -i camera-photo"							# Notification command (leave blank if undesired).
+NOTIT="Screenshot Snapped"									# Notification title.
+NOTIM="Image saved at $LOC."									# Notification message.
+NOTIUT="Screenshot Uploaded"									# Notification upload title.
+NOTIUM="Image uploaded at $URL/$FILE."								# Notification upload message.
+AUDL="/path/to/sound.ogg"									# Location of your audio file. Must have full path (no "~/").
+
+# FTP or SFTP Upload
+# Can be activated using -upload (or any parameter really)
+
+URL="sftp://user@website.com/"									# Set the URL you'd like to upload to.
+URLNORM="http://www.website.com/"								# What the website's normal URL would be (for clipboard).
+LOG="user"											# Username for login, if there is any.
+PASS="password"											# Password for login.
+# ADDHOST="ssh-keyscan -t rsa $URL >> ~/.ssh/known_hosts"					# Simple way to add hosts for SFTP file uploads. Uncomment once to add website then comment back (may not be necessary).
+
+# Timer With Sound and Notification
+#
+# Configuration
+
+AUDLTIM="/path/to/sound.ogg"									# Location of sound to go off when Timer ends.
+NOTITIM="notify-send -u critical -i appointment-soon"						# Notification command.
+NOTITIMM="Timer/Alarm went off at $(date +%R:%S) on $(date +%d-%m-%Y)."				# Notification message when Timer goes off.
+
+# Video Background
+#
+# Configuration
+
+RES="1920x1080+0+0"										# The resolution and position of the background.
+PLAY="mpv"											# Player for the video background.
+REND="--vo=xv"											# Render option for MPlayer and MPV.
+VPARM="--video-aspect=16:9 -loop inf"								# Any special parameters for looping and so forth.

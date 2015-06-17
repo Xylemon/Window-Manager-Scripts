@@ -1,0 +1,13 @@
+#!/bin/bash
+# Provides system sounds for dialog boxes.
+
+# Loads configuration file.
+c_file=~/.xyscripts
+
+xprop -id $(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5) _NET_WM_NAME
+
+if [ STRING="Error" ]
+	
+then
+	$AUDP $AUDE
+fi

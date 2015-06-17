@@ -1,0 +1,13 @@
+#!/bin/bash
+# Simple Timer script.
+#
+# When a program (in my case, wmtimer) runs out, it executes this script. 
+# Any parameters are the title for the notification. For example, "./timer-xy Food".
+
+# Loads configuration file.
+c_file=~/.xyscripts
+
+source $c_file
+echo "Configuration File Loaded"
+
+$AUDP $AUDLTIM & $NOTITIM "$1" "$NOTITIMM"  

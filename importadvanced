@@ -1,0 +1,23 @@
+#!/bin/bash
+# Advancedish script for ImageMagick's Import.
+#
+# By Gethyn "Xylemon" ThomasQuail
+
+# Loads configuration file.
+c_file=~/.xyscripts
+
+source $c_file
+echo "Configuration File Loaded"
+
+if [ $1 ]
+	
+then
+
+	$SCTOOL $IPARM "$LOC/$FILE" && $AUDP $AUDL && $NOTI "$NOTIT" "$NOTIM $LOC." && curl -v -T "$LOC/$FILE" $URL --user $LOG:"$PASS" && $NOTI "$NOTIUT" "$NOTIUM" && echo "$URLNORM/$FILE" | $CLIP
+
+
+else
+
+	$SCTOOL $IPARM "$LOC/$FILE" && $AUDP $AUDL && $NOTI "$NOTIT" "$NOTIM"
+
+fi

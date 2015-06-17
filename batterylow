@@ -1,0 +1,12 @@
+#!/bin/bash
+# Battery Indicator for Laptops.
+#
+# By Gethyn "Xylemon" ThomasQuail
+
+# Loads configuration file.
+c_file=~/.xyscripts
+
+source $c_file
+echo "Configuration File Loaded"
+
+$AUDP $AUDLBATL & $NOTIBATL "$NOTIBATLT" "$NOTIBATLM"  & $BATLLIT

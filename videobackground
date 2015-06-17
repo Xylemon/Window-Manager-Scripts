@@ -1,0 +1,15 @@
+#!/bin/bash
+# Video Background using xwinwrap
+#
+# By Gethyn ThomasQuail
+# Help from Compton and SpaceFM GitHub issues and config help from: http://wiki.bash-hackers.org/howto/conffile.
+#
+# Load video files like this "videobackground /path/to/file".
+
+# Loads configuration file.
+c_file=~/.xyscripts
+
+source $c_file
+echo "File Loaded"
+
+xwinwrap -ov -g $RES -- $PLAY $REND -wid WID $1 $VPARM
