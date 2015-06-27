@@ -58,7 +58,7 @@ not working (Issue #1).
 Required:
 
 - Bash (at least that's what I've written these to use)
-- Curl
+- cURL
 - ImageMagick or GraphicsMagick (for importadvanced)
 - Linux or Unix based systems
 - xwinwrap (for videobackground)
@@ -66,8 +66,8 @@ Required:
 Optional:
 
 - A libnotify based notification daemon
-- xclip if you want to use the upload url to clipboard feature
-- Curl with openssl support (if you want to upload with SFTP)
+- xclip if you want to use the upload URL to clipboard feature
+- cURL with OpenSSL support (if you want to upload with SFTP)
 
 
 ##License
