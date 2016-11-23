@@ -44,7 +44,7 @@ The following scripts are included (not all are currently finished):
   program (like wmtimer). Perhaps will become more independent over time.
 
 - videobackground: Handy for making a video play all the time as a desktop 
-  background (similar to Windows DreamScene). Can be customized to use an 
+  background (similar to Windows DreamScene). Can be customized to use a 
   video player with any parameters. See the [wiki page] [wiki1] on how it 
   can be setup in WindowMaker and feel nicely integrated.
 
